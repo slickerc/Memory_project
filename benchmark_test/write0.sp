@@ -13,10 +13,10 @@ vs source 0 pwl 0n  0 1n 0.0   5n 0.0   5.01n  0.0 6n 0.0
 ve substrate 0 0
  
 * --- Transistor ---
-x1 drain gate source substrate nmos1 W=1e-7 L=50e-9 soimod=0
+x1 drain gate source substrate nmos1 W=1e-7 L=50e-9 soimod=1
 
 * --- Transient Analysis ---
-.tran .1n 10n
+.tran .1n 100n
 
 .print tran v(x1.b)
 
